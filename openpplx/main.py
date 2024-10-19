@@ -28,8 +28,11 @@ def main(page: ft.Page):
             bot_response_container = ft.Container(
                 content=ft.Column([
                     ft.Text(f"{res}", color=ft.colors.WHITE),
-                    ft.ElevatedButton(
-                        text="Copy",
+                    ft.IconButton(
+                        icon=ft.icons.COPY,
+                        icon_color=ft.colors.WHITE,
+                        icon_size=20,
+                        tooltip="Copy",
                         on_click=lambda _: copy_to_clipboard(res),
                         style=ft.ButtonStyle(
                             shape=ft.RoundedRectangleBorder(radius=5),
