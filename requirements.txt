@@ -3,3 +3,4 @@ g4f
 googlesearch-python
 beautifulsoup4
 requests
+pip
